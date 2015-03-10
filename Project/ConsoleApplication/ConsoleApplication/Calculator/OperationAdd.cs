@@ -10,7 +10,9 @@ namespace ConsoleApplication.Calculator
     {
         public float Calculate(string inputA, string inputB)
         {
-            return 1;
+            inputA = inputA.Replace('.', ',');
+            inputB = inputB.Replace('.', ',');
+            return float.Parse(inputA) + float.Parse(inputB);
         }
     }
 }
