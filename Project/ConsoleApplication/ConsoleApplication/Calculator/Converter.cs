@@ -17,7 +17,7 @@ namespace ConsoleApplication.Calculator
 
         public string Convert(float input)
         {
-            return input.ToString("N2");
+            return input.ToString("{0:N2}");
         }
     }
 }
